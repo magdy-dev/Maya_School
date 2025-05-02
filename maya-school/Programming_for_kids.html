@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <!-- Basic -->
@@ -14,11 +14,11 @@
 
     <title>Maya Kids Programming</title>
 
-    <!-- bootstrap core css -->
+    <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet" />
-    <!-- responsive style -->
+    <!-- Responsive style -->
     <link href="css/responsive.css" rel="stylesheet" />
     <style>
         .programming_section {
@@ -51,11 +51,11 @@
 </head>
 
 <body class="sub_page">
-<div class="top_container ">
-    <!-- header section starts -->
+<div class="top_container">
+    <!-- Header section starts -->
     <header class="header_section">
         <div class="container">
-            <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="index.html">
                     <span>Maya Kids Digital School</span>
                 </a>
@@ -81,38 +81,39 @@
                             </li>
                         </ul>
                     </div>
+                </div>
             </nav>
         </div>
     </header>
 </div>
-<!-- end header section -->
+<!-- End header section -->
 
-<!-- programming section -->
+<!-- Programming section -->
 <section class="programming_section">
     <div class="container">
         <h2>Programming for Kids</h2>
         <p>At Maya Kids Digital School, we believe that learning programming should be fun and engaging. Our courses are designed to introduce children to the world of coding through interactive projects and games.</p>
         <h3>Course Offerings</h3>
-        <ul style="list-style-type: none; padding: 0;">
-            <li style="background: #ffffff; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+        <ul>
+            <li>
                 <strong style="color: #ff5722;">Scratch Programming:</strong> Create animations and games. <em style="color: #ff9800;">Price: $100</em>
             </li>
-            <li style="background: #ffffff; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <li>
                 <strong style="color: #ff5722;">Python Basics:</strong> Dive into the fundamentals of Python. <em style="color: #ff9800;">Price: $120</em>
             </li>
-            <li style="background: #ffffff; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <li>
                 <strong style="color: #ff5722;">Web Development:</strong> Build simple websites using HTML and CSS. <em style="color: #ff9800;">Price: $150</em>
             </li>
-            <li style="background: #ffffff; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <li>
                 <strong style="color: #ff5722;">Robotics:</strong> Program robots for fun tasks. <em style="color: #ff9800;">Price: $200</em>
             </li>
-            <li style="background: #ffffff; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <li>
                 <strong style="color: #ff5722;">Game Development:</strong> Design your own video games. <em style="color: #ff9800;">Price: $180</em>
             </li>
-            <li style="background: #ffffff; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <li>
                 <strong style="color: #ff5722;">App Creation:</strong> Make mobile applications. <em style="color: #ff9800;">Price: $160</em>
             </li>
-            <li style="background: #ffffff; margin: 15px 0; padding: 15px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);">
+            <li>
                 <strong style="color: #ff5722;">Digital Art & Animation:</strong> Create animated stories. <em style="color: #ff9800;">Price: $140</em>
             </li>
         </ul>
@@ -120,7 +121,7 @@
         <p>Our experienced instructors provide personalized attention, ensuring that each child progresses at their own pace while having fun. We focus on creativity, problem-solving, and teamwork, making coding an enjoyable experience for the whole family!</p>
     </div>
 </section>
-<!-- end programming section -->
+<!-- End programming section -->
 
 <section class="info_section layout_padding-top">
     <div class="info_logo-box">
@@ -130,9 +131,7 @@
         <div class="row">
             <div class="col-md-3">
                 <h5>About Us</h5>
-                <p>
-                    Maya Kids Digital School is dedicated to empowering children with coding and digital skills in a joyful, supportive environment.
-                </p>
+                <p>Maya Kids Digital School is dedicated to empowering children with coding and digital skills in a joyful, supportive environment.</p>
             </div>
             <div class="col-md-3">
                 <h5>Quick Links</h5>
@@ -142,10 +141,9 @@
                     <li><a href="gallery.html">Photo Gallery</a></li>
                 </ul>
             </div>
-            <section id="contact">
-                <h2>Contact Us</h2>
-                <p>Email: markobosh5@gmail.com</p>
-                <p>Phone: +375 44 587 6356</p>
+            <div class="col-md-3">
+                <h5>Contact Us</h5>
+                <p>Email: markobosh5@gmail.com<br>Phone: +375 44 587 6356</p>
                 <div class="subscribe_container">
                     <h5>Newsletter</h5>
                     <form id="subscribeForm" onsubmit="return handleSubscription(event)">
@@ -154,23 +152,7 @@
                     </form>
                     <p id="confirmationMessage" style="display:none;"></p>
                 </div>
-            </section>
-
-            <footer>
-                <p>Copyright &copy; 2025 All Rights Reserved By <a href="#">Maya Kids Digital School</a></p>
-            </footer>
-
-            <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-            <script type="text/javascript" src="js/bootstrap.js"></script>
-            <script>
-                function handleSubscription(event) {
-                    event.preventDefault();
-                    const email = document.getElementById('emailInput').value;
-                    document.getElementById('confirmationMessage').innerText = `Thank you for subscribing with ${email}!`;
-                    document.getElementById('confirmationMessage').style.display = 'block';
-                    document.getElementById('subscribeForm').reset();
-                }
-            </script>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -185,17 +167,23 @@
     </div>
 </section>
 
-<!-- footer section -->
+<!-- Footer section -->
 <section class="container-fluid footer_section">
-    <p>
-        Copyright &copy; 2025 All Rights Reserved By
-        <a href="#">Maya Kids Digital School</a>
-    </p>
+    <p>&copy; 2025 Maya Kids Digital School. All Rights Reserved.</p>
 </section>
-<!-- footer section -->
+<!-- End footer section -->
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+<script>
+    function handleSubscription(event) {
+        event.preventDefault();
+        const email = document.getElementById('emailInput').value;
+        document.getElementById('confirmationMessage').innerText = `Thank you for subscribing with ${email}!`;
+        document.getElementById('confirmationMessage').style.display = 'block';
+        document.getElementById('subscribeForm').reset();
+    }
+</script>
 </body>
 
 </html>
