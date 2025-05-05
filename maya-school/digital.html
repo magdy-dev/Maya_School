@@ -14,7 +14,7 @@
   <meta name="description" content="Explore the world of digital creativity at Maya Kids Digital School." />
   <meta name="author" content="Maya Kids Digital School" />
 
-  <title>Digital Creativity - Maya Kids Digital School</title>
+  <title id="page-title">Digital Creativity - Maya Kids Digital School</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -59,7 +59,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
-          <span>Maya Kids Digital School</span>
+          <span id="navbar-title">Maya Kids Digital School</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -70,21 +70,24 @@
           <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html"> Home </a>
+                <a class="nav-link" href="index.html" id="home-link">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About Us </a>
+                <a class="nav-link" href="about.html" id="about-link">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="admission.html"> Admissions </a>
+                <a class="nav-link" href="admission.html" id="admission-link">Admissions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Programming_for_kids.html"> Programming Kids</a>
+                <a class="nav-link" href="Programming_for_kids.html" id="programming-link">Programming Kids</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html"> Contact Us </a>
+                <a class="nav-link" href="contact.html" id="contact-link">Contact Us</a>
               </li>
             </ul>
+            <button class="btn btn-link language-icon ml-3" onclick="changeLanguage()" title="Switch Language">
+              <i class="fa fa-globe"></i>
+            </button>
           </div>
         </div>
       </nav>
@@ -96,16 +99,16 @@
 <!-- Digital creativity section -->
 <section class="creativity_section">
   <div class="container">
-    <h2>Digital Creativity</h2>
-    <p>At Maya Kids Digital School, we nurture creativity through coding, design, and digital arts. Our programs empower children to express their ideas through technology.</p>
+    <h2 id="creativity-title">Digital Creativity</h2>
+    <p id="creativity-description">At Maya Kids Digital School, we nurture creativity through coding, design, and digital arts. Our programs empower children to express their ideas through technology.</p>
     <div class="row">
       <div class="col-md-6">
-        <h3>Creative Coding</h3>
-        <p>Learn to code interactive stories and games that showcase your unique ideas and creativity.</p>
+        <h3 id="coding-title">Creative Coding</h3>
+        <p id="coding-description">Learn to code interactive stories and games that showcase your unique ideas and creativity.</p>
       </div>
       <div class="col-md-6">
-        <h3>Digital Arts</h3>
-        <p>Explore graphic design and digital art tools to bring your imagination to life.</p>
+        <h3 id="arts-title">Digital Arts</h3>
+        <p id="arts-description">Explore graphic design and digital art tools to bring your imagination to life.</p>
       </div>
     </div>
   </div>
@@ -114,13 +117,55 @@
 
 <!-- Footer section -->
 <section class="container-fluid footer_section">
-  <p>&copy; 2025 All Rights Reserved By <a href="#">Maya Kids Digital School</a></p>
+  <p id="footer-text">&copy; 2025 All Rights Reserved By <a href="#">Maya Kids Digital School</a></p>
 </section>
 <!-- End footer section -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+  let isArabic = false;
+
+  function changeLanguage() {
+    if (isArabic) {
+      // Change to English
+      document.getElementById("page-title").innerText = "Digital Creativity - Maya Kids Digital School";
+      document.getElementById("navbar-title").innerText = "Maya Kids Digital School";
+      document.getElementById("home-link").innerText = "Home";
+      document.getElementById("about-link").innerText = "About Us";
+      document.getElementById("admission-link").innerText = "Admissions";
+      document.getElementById("programming-link").innerText = "Programming Kids";
+      document.getElementById("contact-link").innerText = "Contact Us";
+      document.getElementById("creativity-title").innerText = "Digital Creativity";
+      document.getElementById("creativity-description").innerText = "At Maya Kids Digital School, we nurture creativity through coding, design, and digital arts. Our programs empower children to express their ideas through technology.";
+      document.getElementById("coding-title").innerText = "Creative Coding";
+      document.getElementById("coding-description").innerText = "Learn to code interactive stories and games that showcase your unique ideas and creativity.";
+      document.getElementById("arts-title").innerText = "Digital Arts";
+      document.getElementById("arts-description").innerText = "Explore graphic design and digital art tools to bring your imagination to life.";
+      document.getElementById("footer-text").innerHTML = "&copy; 2025 All Rights Reserved By <a href='#'>Maya Kids Digital School</a>";
+    } else {
+      // Change to Arabic
+      document.getElementById("page-title").innerText = "الإبداع الرقمي - مدرسة مايا الرقمية للأطفال";
+      document.getElementById("navbar-title").innerText = "مدرسة مايا الرقمية للأطفال";
+      document.getElementById("home-link").innerText = "الرئيسية";
+      document.getElementById("about-link").innerText = "من نحن";
+      document.getElementById("admission-link").innerText = "التسجيل";
+      document.getElementById("programming-link").innerText = "برمجة الأطفال";
+      document.getElementById("contact-link").innerText = "اتصل بنا";
+      document.getElementById("creativity-title").innerText = "الإبداع الرقمي";
+      document.getElementById("creativity-description").innerText = "في مدرسة مايا الرقمية للأطفال، نرعى الإبداع من خلال البرمجة، التصميم، والفنون الرقمية. تمكّن برامجنا الأطفال من التعبير عن أفكارهم من خلال التكنولوجيا.";
+      document.getElementById("coding-title").innerText = "البرمجة الإبداعية";
+      document.getElementById("coding-description").innerText = "تعلم كيفية برمجة قصص تفاعلية وألعاب تعرض أفكارك الفريدة وإبداعك.";
+      document.getElementById("arts-title").innerText = "الفنون الرقمية";
+      document.getElementById("arts-description").innerText = "استكشف أدوات التصميم الجرافيكي والفنون الرقمية لإحياء خيالك.";
+      document.getElementById("footer-text").innerHTML = "&copy; 2025 جميع الحقوق محفوظة من قبل <a href='#'>مدرسة مايا الرقمية للأطفال</a>";
+    }
+    isArabic = !isArabic;
+  }
+</script>
+
 </body>
 
 </html>

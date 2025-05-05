@@ -2,24 +2,17 @@
 <html lang="en">
 
 <head>
-    <!-- Basic -->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <!-- Site Metas -->
-    <meta name="keywords" content="kids programming, coding for kids, digital skills, Maya Kids Digital School" />
-    <meta name="description" content="Empowering children with programming skills at Maya Kids Digital School." />
-    <meta name="author" content="Maya Kids Digital School" />
-
-    <title>Maya Kids Programming</title>
+    <title id="page-title">Maya Kids Programming</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-    <!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet" />
-    <!-- Responsive style -->
-    <link href="css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         .programming_section {
             padding: 50px 0;
@@ -52,12 +45,11 @@
 
 <body class="sub_page">
 <div class="top_container">
-    <!-- Header section starts -->
     <header class="header_section">
         <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="index.html">
-                    <span>Maya Kids Digital School</span>
+                    <span id="navbar-title">Maya Kids Digital School</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,6 +72,9 @@
                                 <a class="nav-link" href="contact.html"> Contact Us </a>
                             </li>
                         </ul>
+                        <button class="btn btn-link language-icon ml-3" onclick="changeLanguage()" title="Switch Language">
+                            <i class="fa fa-globe" style="font-size: 24px;"></i>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -91,66 +86,72 @@
 <!-- Programming section -->
 <section class="programming_section">
     <div class="container">
-        <h2>Programming for Kids</h2>
-        <p>At Maya Kids Digital School, we believe that learning programming should be fun and engaging. Our courses are designed to introduce children to the world of coding through interactive projects and games.</p>
+        <h2 id="programming-title">Programming for Kids</h2>
+        <p id="programming-description">
+            At Maya Kids Digital School, we believe that learning programming should be fun and engaging. Our courses are designed to introduce children to the world of coding through interactive projects and games.
+        </p>
         <h3>Course Offerings</h3>
         <ul>
             <li>
-                <strong style="color: #ff5722;">Scratch Programming:</strong> Create animations and games. <em style="color: #ff9800;">Price: $100</em>
+                <strong id="course1-title">Scratch Programming:</strong> <span id="course1-description">Create animations and games. <em style="color: #ff9800;">Price: $100</em></span>
             </li>
             <li>
-                <strong style="color: #ff5722;">Python Basics:</strong> Dive into the fundamentals of Python. <em style="color: #ff9800;">Price: $120</em>
+                <strong id="course2-title">Python Basics:</strong> <span id="course2-description">Dive into the fundamentals of Python. <em style="color: #ff9800;">Price: $120</em></span>
             </li>
             <li>
-                <strong style="color: #ff5722;">Web Development:</strong> Build simple websites using HTML and CSS. <em style="color: #ff9800;">Price: $150</em>
+                <strong id="course3-title">Web Development:</strong> <span id="course3-description">Build simple websites using HTML and CSS. <em style="color: #ff9800;">Price: $150</em></span>
             </li>
             <li>
-                <strong style="color: #ff5722;">Robotics:</strong> Program robots for fun tasks. <em style="color: #ff9800;">Price: $200</em>
+                <strong id="course4-title">Robotics:</strong> <span id="course4-description">Program robots for fun tasks. <em style="color: #ff9800;">Price: $200</em></span>
             </li>
             <li>
-                <strong style="color: #ff5722;">Game Development:</strong> Design your own video games. <em style="color: #ff9800;">Price: $180</em>
+                <strong id="course5-title">Game Development:</strong> <span id="course5-description">Design your own video games. <em style="color: #ff9800;">Price: $180</em></span>
             </li>
             <li>
-                <strong style="color: #ff5722;">App Creation:</strong> Make mobile applications. <em style="color: #ff9800;">Price: $160</em>
+                <strong id="course6-title">App Creation:</strong> <span id="course6-description">Make mobile applications. <em style="color: #ff9800;">Price: $160</em></span>
             </li>
             <li>
-                <strong style="color: #ff5722;">Digital Art & Animation:</strong> Create animated stories. <em style="color: #ff9800;">Price: $140</em>
+                <strong id="course7-title">Digital Art & Animation:</strong> <span id="course7-description">Create animated stories. <em style="color: #ff9800;">Price: $140</em></span>
             </li>
         </ul>
         <h3>Why Choose Our Programs?</h3>
-        <p>Our experienced instructors provide personalized attention, ensuring that each child progresses at their own pace while having fun. We focus on creativity, problem-solving, and teamwork, making coding an enjoyable experience for the whole family!</p>
+        <p id="why-choose-description">Our experienced instructors provide personalized attention, ensuring that each child progresses at their own pace while having fun. We focus on creativity, problem-solving, and teamwork, making coding an enjoyable experience for the whole family!</p>
     </div>
 </section>
 <!-- End programming section -->
 
 <section class="info_section layout_padding-top">
     <div class="info_logo-box">
-        <h2>Maya Kids Digital School</h2>
+        <h2 id="info-title">Maya Kids Digital School</h2>
     </div>
     <div class="container layout_padding2">
         <div class="row">
             <div class="col-md-3">
-                <h5>About Us</h5>
-                <p>Maya Kids Digital School is dedicated to empowering children with coding and digital skills in a joyful, supportive environment.</p>
+                <h5 id="about-title">About Us</h5>
+                <p id="about-description">Maya Kids Digital School is dedicated to empowering children with coding and digital skills in a joyful, supportive environment.</p>
             </div>
             <div class="col-md-3">
-                <h5>Quick Links</h5>
+                <h5 id="quick-links-title">Quick Links</h5>
                 <ul>
-                    <li><a href="about.html">Our Mission</a></li>
-                    <li><a href="admission.html">Admissions Info</a></li>
-                    <li><a href="gallery.html">Photo Gallery</a></li>
+                    <li><a href="about.html" id="mission-link">Our Mission</a></li>
+                    <li><a href="admission.html" id="admissions-link">Admissions Info</a></li>
+                    <li><a href="gallery.html" id="gallery-link">Photo Gallery</a></li>
                 </ul>
             </div>
             <div class="col-md-3">
-                <h5>Contact Us</h5>
-                <p>Email: markobosh5@gmail.com<br>Phone: +375 44 587 6356</p>
+                <h5 id="contact-title">Contact Us</h5>
+                <p id="contact-info">Email: markobosh5@gmail.com<br>Phone: +375 44 587 6356</p>
+            </div>
+            <div class="col-md-3">
                 <div class="subscribe_container">
                     <h5>Newsletter</h5>
-                    <form id="subscribeForm" onsubmit="return handleSubscription(event)">
-                        <input type="email" id="emailInput" placeholder="Enter your email" required>
-                        <button type="submit">Subscribe</button>
-                    </form>
-                    <p id="confirmationMessage" style="display:none;"></p>
+                    <div class="form_container">
+                        <form id="subscribeForm" onsubmit="return handleSubscription(event)">
+                            <input type="email" id="emailInput" placeholder="Enter your email" required>
+                            <button type="submit">Subscribe</button>
+                        </form>
+                        <p id="confirmationMessage" style="display:none;"></p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -158,10 +159,9 @@
     <div class="container">
         <div class="social_container">
             <div class="social-box">
-                <a href="#"><img src="images/fb.png" alt="Facebook"></a>
-                <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-                <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-                <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+                <a href="https://www.facebook.com/share/g/1E8xH7ao3K/?mibextid=wwXIfr"><img src="images/fb.png" alt="Facebook"></a>
+                <a href="https://wa.me/375445876356"><img src="images/whatsapp.png" alt="whatsapp"></a>
+                <a href="https://t.me/MagMark11"><img src="images/telgram.png" alt="Telgram"></a>
             </div>
         </div>
     </div>
@@ -169,12 +169,14 @@
 
 <!-- Footer section -->
 <section class="container-fluid footer_section">
-    <p>&copy; 2025 Maya Kids Digital School. All Rights Reserved.</p>
+    <p id="footer-text">&copy; 2025 Maya Kids Digital School. All Rights Reserved.</p>
 </section>
 <!-- End footer section -->
 
-<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-<script type="text/javascript" src="js/bootstrap.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
 <script>
     function handleSubscription(event) {
         event.preventDefault();
@@ -182,6 +184,75 @@
         document.getElementById('confirmationMessage').innerText = `Thank you for subscribing with ${email}!`;
         document.getElementById('confirmationMessage').style.display = 'block';
         document.getElementById('subscribeForm').reset();
+    }
+
+    let isArabic = false;
+
+    function changeLanguage() {
+        if (isArabic) {
+            // Change to English
+            document.getElementById("page-title").innerText = "Maya Kids Programming";
+            document.getElementById("navbar-title").innerText = "Maya Kids Digital School";
+            document.getElementById("programming-title").innerText = "Programming for Kids";
+            document.getElementById("programming-description").innerText = "At Maya Kids Digital School, we believe that learning programming should be fun and engaging. Our courses are designed to introduce children to the world of coding through interactive projects and games.";
+            document.getElementById("why-choose-description").innerText = "Our experienced instructors provide personalized attention, ensuring that each child progresses at their own pace while having fun. We focus on creativity, problem-solving, and teamwork, making coding an enjoyable experience for the whole family!";
+            document.getElementById("course1-title").innerText = "Scratch Programming:";
+            document.getElementById("course1-description").innerText = "Create animations and games. Price: $100";
+            document.getElementById("course2-title").innerText = "Python Basics:";
+            document.getElementById("course2-description").innerText = "Dive into the fundamentals of Python. Price: $120";
+            document.getElementById("course3-title").innerText = "Web Development:";
+            document.getElementById("course3-description").innerText = "Build simple websites using HTML and CSS. Price: $150";
+            document.getElementById("course4-title").innerText = "Robotics:";
+            document.getElementById("course4-description").innerText = "Program robots for fun tasks. Price: $200";
+            document.getElementById("course5-title").innerText = "Game Development:";
+            document.getElementById("course5-description").innerText = "Design your own video games. Price: $180";
+            document.getElementById("course6-title").innerText = "App Creation:";
+            document.getElementById("course6-description").innerText = "Make mobile applications. Price: $160";
+            document.getElementById("course7-title").innerText = "Digital Art & Animation:";
+            document.getElementById("course7-description").innerText = "Create animated stories. Price: $140";
+            document.getElementById("info-title").innerText = "Maya Kids Digital School";
+            document.getElementById("about-title").innerText = "About Us";
+            document.getElementById("about-description").innerText = "Maya Kids Digital School is dedicated to empowering children with coding and digital skills in a joyful, supportive environment.";
+            document.getElementById("quick-links-title").innerText = "Quick Links";
+            document.getElementById("mission-link").innerText = "Our Mission";
+            document.getElementById("admissions-link").innerText = "Admissions Info";
+            document.getElementById("gallery-link").innerText = "Photo Gallery";
+            document.getElementById("contact-title").innerText = "Contact Us";
+            document.getElementById("contact-info").innerText = "Email: markobosh5@gmail.com\nPhone: +375 44 587 6356";
+            document.getElementById("footer-text").innerText = "© 2025 Maya Kids Digital School. All Rights Reserved.";
+        } else {
+            // Change to Arabic
+            document.getElementById("page-title").innerText = "برمجة الأطفال - مدرسة مايا الرقمية";
+            document.getElementById("navbar-title").innerText = "مدرسة مايا الرقمية للأطفال";
+            document.getElementById("programming-title").innerText = "برمجة الأطفال";
+            document.getElementById("programming-description").innerText = "في مدرسة مايا الرقمية للأطفال، نؤمن بأن تعلم البرمجة يجب أن يكون ممتعًا وجذابًا. تم تصميم دوراتنا لتقديم الأطفال إلى عالم البرمجة من خلال مشاريع وألعاب تفاعلية.";
+            document.getElementById("why-choose-description").innerText = "يقدم معلمونا ذوو الخبرة اهتمامًا شخصيًا، مما يضمن تقدم كل طفل وفقًا لسرعته الخاصة أثناء الاستمتاع. نركز على الإبداع وحل المشكلات والعمل الجماعي، مما يجعل البرمجة تجربة ممتعة لجميع العائلات!";
+            document.getElementById("course1-title").innerText = "برمجة سكراتش:";
+            document.getElementById("course1-description").innerText = "إنشاء الرسوم المتحركة والألعاب. السعر: 100 دولار";
+            document.getElementById("course2-title").innerText = "أساسيات بايثون:";
+            document.getElementById("course2-description").innerText = "غص في أساسيات بايثون. السعر: 120 دولار";
+            document.getElementById("course3-title").innerText = "تطوير الويب:";
+            document.getElementById("course3-description").innerText = "بناء مواقع بسيطة باستخدام HTML وCSS. السعر: 150 دولار";
+            document.getElementById("course4-title").innerText = "روبوتات:";
+            document.getElementById("course4-description").innerText = "برمجة الروبوتات للقيام بمهام ممتعة. السعر: 200 دولار";
+            document.getElementById("course5-title").innerText = "تطوير الألعاب:";
+            document.getElementById("course5-description").innerText = "تصميم ألعاب الفيديو الخاصة بك. السعر: 180 دولار";
+            document.getElementById("course6-title").innerText = "إنشاء التطبيقات:";
+            document.getElementById("course6-description").innerText = "إنشاء تطبيقات الهواتف المحمولة. السعر: 160 دولار";
+            document.getElementById("course7-title").innerText = "الفن الرقمي والرسوم المتحركة:";
+            document.getElementById("course7-description").innerText = "إنشاء قصص متحركة. السعر: 140 دولار";
+            document.getElementById("info-title").innerText = "مدرسة مايا الرقمية للأطفال";
+            document.getElementById("about-title").innerText = "من نحن";
+            document.getElementById("about-description").innerText = "مدرسة مايا الرقمية للأطفال مكرسة لتمكين الأطفال من مهارات البرمجة والمهارات الرقمية في بيئة داعمة ومبهجة.";
+            document.getElementById("quick-links-title").innerText = "روابط سريعة";
+            document.getElementById("mission-link").innerText = "مهمتنا";
+            document.getElementById("admissions-link").innerText = "معلومات التسجيل";
+            document.getElementById("gallery-link").innerText = "معرض الصور";
+            document.getElementById("contact-title").innerText = "اتصل بنا";
+            document.getElementById("contact-info").innerText = "البريد الإلكتروني: markobosh5@gmail.com\nالهاتف: +375 44 587 6356";
+            document.getElementById("footer-text").innerText = "© 2025 مدرسة مايا الرقمية للأطفال. جميع الحقوق محفوظة.";
+        }
+        isArabic = !isArabic;
     }
 </script>
 </body>

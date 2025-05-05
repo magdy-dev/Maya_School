@@ -14,7 +14,7 @@
   <meta name="description" content="Join our exciting events at Maya Kids Digital School." />
   <meta name="author" content="Maya Kids Digital School" />
 
-  <title>Events - Maya Kids Digital School</title>
+  <title id="page-title">Events - Maya Kids Digital School</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -72,7 +72,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
-          <span>Maya Kids Digital School</span>
+          <span id="navbar-title">Maya Kids Digital School</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -83,24 +83,27 @@
           <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="index.html"> Home </a>
+                <a class="nav-link" href="index.html" id="home-link">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="about.html"> About Us </a>
+                <a class="nav-link" href="about.html" id="about-link">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="admission.html"> Admissions </a>
+                <a class="nav-link" href="admission.html" id="admission-link">Admissions</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Programming_for_kids.html"> Programming Kids </a>
+                <a class="nav-link" href="Programming_for_kids.html" id="programming-link">Programming Kids</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="events.html"> Events <span class="sr-only">(current)</span></a>
+                <a class="nav-link" href="events.html">Events <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="contact.html"> Contact Us </a>
+                <a class="nav-link" href="contact.html" id="contact-link">Contact Us</a>
               </li>
             </ul>
+            <button class="btn btn-link language-icon ml-3" onclick="changeLanguage()" title="Switch Language">
+              <i class="fa fa-globe"></i>
+            </button>
           </div>
         </div>
       </nav>
@@ -112,24 +115,24 @@
 <!-- Events section -->
 <section class="events_section">
   <div class="container">
-    <h2>Upcoming Events</h2>
+    <h2 id="events-title">Upcoming Events</h2>
 
     <div class="event_card">
-      <div class="event_date">June 15, 2025</div>
-      <div class="event_title">Summer Coding Camp</div>
-      <p class="event_description">Join us for a fun-filled week of coding activities for kids. Learn to build games and websites!</p>
+      <div class="event_date" id="event1-date">June 15, 2025</div>
+      <div class="event_title" id="event1-title">Summer Coding Camp</div>
+      <p class="event_description" id="event1-description">Join us for a fun-filled week of coding activities for kids. Learn to build games and websites!</p>
     </div>
 
     <div class="event_card">
-      <div class="event_date">July 20, 2025</div>
-      <div class="event_title">Digital Art Workshop</div>
-      <p class="event_description">Explore your creativity in our digital art workshop. Perfect for young artists looking to make their mark!</p>
+      <div class="event_date" id="event2-date">July 20, 2025</div>
+      <div class="event_title" id="event2-title">Digital Art Workshop</div>
+      <p class="event_description" id="event2-description">Explore your creativity in our digital art workshop. Perfect for young artists looking to make their mark!</p>
     </div>
 
     <div class="event_card">
-      <div class="event_date">August 10, 2025</div>
-      <div class="event_title">Robotics Challenge</div>
-      <p class="event_description">Participate in our robotics challenge and showcase your skills in building and programming robots!</p>
+      <div class="event_date" id="event3-date">August 10, 2025</div>
+      <div class="event_title" id="event3-title">Robotics Challenge</div>
+      <p class="event_description" id="event3-description">Participate in our robotics challenge and showcase your skills in building and programming robots!</p>
     </div>
   </div>
 </section>
@@ -137,13 +140,63 @@
 
 <!-- Footer section -->
 <section class="container-fluid footer_section">
-  <p>&copy; 2025 All Rights Reserved By <a href="#">Maya Kids Digital School</a></p>
+  <p id="footer-text">&copy; 2025 All Rights Reserved By <a href="#">Maya Kids Digital School</a></p>
 </section>
 <!-- End footer section -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+  let isArabic = false;
+
+  function changeLanguage() {
+    if (isArabic) {
+      // Change to English
+      document.getElementById("page-title").innerText = "Events - Maya Kids Digital School";
+      document.getElementById("navbar-title").innerText = "Maya Kids Digital School";
+      document.getElementById("home-link").innerText = "Home";
+      document.getElementById("about-link").innerText = "About Us";
+      document.getElementById("admission-link").innerText = "Admissions";
+      document.getElementById("programming-link").innerText = "Programming Kids";
+      document.getElementById("contact-link").innerText = "Contact Us";
+      document.getElementById("events-title").innerText = "Upcoming Events";
+      document.getElementById("event1-date").innerText = "June 15, 2025";
+      document.getElementById("event1-title").innerText = "Summer Coding Camp";
+      document.getElementById("event1-description").innerText = "Join us for a fun-filled week of coding activities for kids. Learn to build games and websites!";
+      document.getElementById("event2-date").innerText = "July 20, 2025";
+      document.getElementById("event2-title").innerText = "Digital Art Workshop";
+      document.getElementById("event2-description").innerText = "Explore your creativity in our digital art workshop. Perfect for young artists looking to make their mark!";
+      document.getElementById("event3-date").innerText = "August 10, 2025";
+      document.getElementById("event3-title").innerText = "Robotics Challenge";
+      document.getElementById("event3-description").innerText = "Participate in our robotics challenge and showcase your skills in building and programming robots!";
+      document.getElementById("footer-text").innerHTML = "&copy; 2025 All Rights Reserved By <a href='#'>Maya Kids Digital School</a>";
+    } else {
+      // Change to Arabic
+      document.getElementById("page-title").innerText = "الفعاليات - مدرسة مايا الرقمية للأطفال";
+      document.getElementById("navbar-title").innerText = "مدرسة مايا الرقمية للأطفال";
+      document.getElementById("home-link").innerText = "الرئيسية";
+      document.getElementById("about-link").innerText = "من نحن";
+      document.getElementById("admission-link").innerText = "التسجيل";
+      document.getElementById("programming-link").innerText = "برمجة الأطفال";
+      document.getElementById("contact-link").innerText = "اتصل بنا";
+      document.getElementById("events-title").innerText = "الفعاليات القادمة";
+      document.getElementById("event1-date").innerText = "15 يونيو 2025";
+      document.getElementById("event1-title").innerText = "معسكر البرمجة الصيفي";
+      document.getElementById("event1-description").innerText = "انضم إلينا لأسبوع مليء بالنشاطات البرمجية للأطفال. تعلم كيفية بناء الألعاب والمواقع!";
+      document.getElementById("event2-date").innerText = "20 يوليو 2025";
+      document.getElementById("event2-title").innerText = "ورشة الفن الرقمي";
+      document.getElementById("event2-description").innerText = "استكشف إبداعك في ورشة الفن الرقمي. مثالية للفنانين الصغار الذين يتطلعون إلى ترك بصمتهم!";
+      document.getElementById("event3-date").innerText = "10 أغسطس 2025";
+      document.getElementById("event3-title").innerText = "تحدي الروبوتات";
+      document.getElementById("event3-description").innerText = "شارك في تحدي الروبوتات وأظهر مهاراتك في بناء وبرمجة الروبوتات!";
+      document.getElementById("footer-text").innerHTML = "&copy; 2025 جميع الحقوق محفوظة من قبل <a href='#'>مدرسة مايا الرقمية للأطفال</a>";
+    }
+    isArabic = !isArabic;
+  }
+</script>
+
 </body>
 
 </html>

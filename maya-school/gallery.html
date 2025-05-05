@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-    <title>Maya Kids Digital School - Gallery</title>
+    <title id="page-title">Maya Kids Digital School - Gallery</title>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="css/bootstrap.css" />
@@ -19,7 +19,7 @@
         <div class="container">
             <nav class="navbar navbar-expand-lg custom_nav-container">
                 <a class="navbar-brand" href="index.html">
-                    <span>Maya Kids Digital School</span>
+                    <span id="navbar-title">Maya Kids Digital School</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -36,6 +36,9 @@
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             <li class="nav-item"><a class="nav-link" href="Programming_for_kids.html">Programming Kids</a></li>
                         </ul>
+                        <button class="btn btn-link language-icon ml-3" onclick="changeLanguage()" title="Switch Language">
+                            <i class="fa fa-globe"></i>
+                        </button>
                     </div>
                 </div>
             </nav>
@@ -45,8 +48,8 @@
     <section class="hero_section">
         <div class="hero-container container">
             <div class="hero_detail-box">
-                <h1>Explore Our Gallery</h1>
-                <p>Discover the creativity and joy of our students through their projects and activities.</p>
+                <h1 id="gallery-title">Explore Our Gallery</h1>
+                <p id="gallery-description">Discover the creativity and joy of our students through their projects and activities.</p>
             </div>
         </div>
     </section>
@@ -55,34 +58,34 @@
 <div class="common_style">
     <section class="gallery_section">
         <div class="container">
-            <h1 class="text-center mb-4">Gallery</h1>
-            <p class="text-center mb-4">
+            <h1 class="text-center mb-4" id="gallery-header">Gallery</h1>
+            <p class="text-center mb-4" id="gallery-intro">
                 Explore the creativity and innovation of our young programmers! At Maya Kids Digital School, we empower children to learn coding through fun and engaging projects. From building games to creating animations, our students develop critical thinking and problem-solving skills while having a great time.
             </p>
             <div class="row">
                 <div class="col-md-4 mb-4">
-                    <img src="images/m1.png" alt="Gallery Image 1 - Coding Fun with Scratch" class="img-fluid rounded">
-                    <h5 class="text-center">Coding Fun with Scratch</h5>
+                    <img src="images/m1.png" alt="Coding Fun with Scratch" class="img-fluid rounded">
+                    <h5 class="text-center" id="image1-title">Coding Fun with Scratch</h5>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="images/m2.png" alt="Gallery Image 2 - Creating Animations" class="img-fluid rounded">
-                    <h5 class="text-center">Creating Animations</h5>
+                    <img src="images/m2.png" alt="Creating Animations" class="img-fluid rounded">
+                    <h5 class="text-center" id="image2-title">Creating Animations</h5>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="images/m3.png" alt="Gallery Image 3 - Game Development Project" class="img-fluid rounded">
-                    <h5 class="text-center">Game Development Project</h5>
+                    <img src="images/m3.png" alt="Game Development Project" class="img-fluid rounded">
+                    <h5 class="text-center" id="image3-title">Game Development Project</h5>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="images/m4.png" alt="Gallery Image 4 - Robotics Workshop" class="img-fluid rounded">
-                    <h5 class="text-center">Robotics Workshop</h5>
+                    <img src="images/m4.png" alt="Robotics Workshop" class="img-fluid rounded">
+                    <h5 class="text-center" id="image4-title">Robotics Workshop</h5>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="images/m5.png" alt="Gallery Image 5 - Digital Art Creation" class="img-fluid rounded">
-                    <h5 class="text-center">Digital Art Creation</h5>
+                    <img src="images/m5.png" alt="Digital Art Creation" class="img-fluid rounded">
+                    <h5 class="text-center" id="image5-title">Digital Art Creation</h5>
                 </div>
                 <div class="col-md-4 mb-4">
-                    <img src="images/m6.png" alt="Gallery Image 6 - Collaborative Coding" class="img-fluid rounded">
-                    <h5 class="text-center">Collaborative Coding</h5>
+                    <img src="images/m6.png" alt="Collaborative Coding" class="img-fluid rounded">
+                    <h5 class="text-center" id="image6-title">Collaborative Coding</h5>
                 </div>
             </div>
         </div>
@@ -91,13 +94,53 @@
 
 <!-- Footer section -->
 <section class="container-fluid footer_section">
-    <p>&copy; 2025 Maya Kids Digital School. All Rights Reserved.</p>
+    <p id="footer-text">&copy; 2025 Maya Kids Digital School. All Rights Reserved.</p>
 </section>
 <!-- End footer section -->
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    let isArabic = false;
+
+    function changeLanguage() {
+        if (isArabic) {
+            // Change to English
+            document.getElementById("page-title").innerText = "Maya Kids Digital School - Gallery";
+            document.getElementById("navbar-title").innerText = "Maya Kids Digital School";
+            document.getElementById("gallery-title").innerText = "Explore Our Gallery";
+            document.getElementById("gallery-description").innerText = "Discover the creativity and joy of our students through their projects and activities.";
+            document.getElementById("gallery-header").innerText = "Gallery";
+            document.getElementById("gallery-intro").innerText = "Explore the creativity and innovation of our young programmers! At Maya Kids Digital School, we empower children to learn coding through fun and engaging projects. From building games to creating animations, our students develop critical thinking and problem-solving skills while having a great time.";
+            document.getElementById("image1-title").innerText = "Coding Fun with Scratch";
+            document.getElementById("image2-title").innerText = "Creating Animations";
+            document.getElementById("image3-title").innerText = "Game Development Project";
+            document.getElementById("image4-title").innerText = "Robotics Workshop";
+            document.getElementById("image5-title").innerText = "Digital Art Creation";
+            document.getElementById("image6-title").innerText = "Collaborative Coding";
+            document.getElementById("footer-text").innerHTML = "&copy; 2025 Maya Kids Digital School. All Rights Reserved.";
+        } else {
+            // Change to Arabic
+            document.getElementById("page-title").innerText = "مدرسة مايا الرقمية للأطفال - المعرض";
+            document.getElementById("navbar-title").innerText = "مدرسة مايا الرقمية للأطفال";
+            document.getElementById("gallery-title").innerText = "استكشف معرضنا";
+            document.getElementById("gallery-description").innerText = "اكتشف إبداع فرحتنا من خلال مشاريعهم وأنشطتهم.";
+            document.getElementById("gallery-header").innerText = "المعرض";
+            document.getElementById("gallery-intro").innerText = "استكشف إبداع وابتكار مبرمجينا الصغار! في مدرسة مايا الرقمية للأطفال، نساعد الأطفال على تعلم البرمجة من خلال مشاريع ممتعة وجذابة. من بناء الألعاب إلى إنشاء الرسوم المتحركة، يطور طلابنا مهارات التفكير النقدي وحل المشكلات أثناء الاستمتاع.";
+            document.getElementById("image1-title").innerText = "متعة البرمجة باستخدام سكراتش";
+            document.getElementById("image2-title").innerText = "إنشاء الرسوم المتحركة";
+            document.getElementById("image3-title").innerText = "مشروع تطوير الألعاب";
+            document.getElementById("image4-title").innerText = "ورشة الروبوتات";
+            document.getElementById("image5-title").innerText = "إنشاء الفن الرقمي";
+            document.getElementById("image6-title").innerText = "البرمجة التعاونية";
+            document.getElementById("footer-text").innerHTML = "&copy; 2025 مدرسة مايا الرقمية للأطفال. جميع الحقوق محفوظة.";
+        }
+        isArabic = !isArabic;
+    }
+</script>
+
 </body>
 
 </html>

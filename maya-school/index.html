@@ -1,23 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Maya Kids Digital School</title>
+  <title id="page-title">مدرسة مايا الرقمية للأطفال</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link rel="stylesheet" href="css/css-circular-prog-bar.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link href="css/style.css" rel="stylesheet" />
   <link href="css/responsive.css" rel="stylesheet" />
   <style>
     .language-icon {
-      font-size: 20px; /* Adjust size as needed */
-      color: #007bff; /* Bootstrap primary color */
+      font-size: 20px;
+      color: #007bff;
     }
   </style>
 </head>
@@ -26,42 +25,35 @@
 <div class="top_container">
   <header class="header_section">
     <div class="container">
-      <nav class="navbar navbar-expand-lg custom_nav-container">
-        <a class="navbar-brand" href="index.html">
-          <span>Maya Kids Digital School</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html" id="brand-name">مدرسة مايا الرقمية للأطفال</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="تبديل الملاحة">
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
-            <ul class="navbar-nav">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html"> Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html"> About </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="admission.html"> Admission </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="why.html"> Why Us </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Programming_for_kids.html"> Programming kids</a>
-              </li>
-
-            </ul>
-            <button class="btn btn-link language-icon ml-3" onclick="changeLanguage()" title="Switch to Arabic">
-              <i class="fa fa-globe"></i>
-            </button>
-          </div>
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html" id="home-link">الرئيسية</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html" id="about-link">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="admission.html" id="admission-link">التسجيل</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="why.html" id="why-link">لماذا نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html" id="contact-link">اتصل بنا</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Programming_for_kids.html" id="programming-link">برمجة للأطفال</a>
+            </li>
+          </ul>
+          <button class="btn btn-link language-icon ml-3" onclick="changeLanguage()" title="تبديل اللغة">
+            <i class="fa fa-globe"></i>
+          </button>
         </div>
       </nav>
     </div>
@@ -70,16 +62,14 @@
   <section class="hero_section">
     <div class="hero-container container">
       <div class="hero_detail-box">
-        <h1>Unlock Your Child's Potential</h1>
-        <p>Welcome to Maya Kids Digital School — where young minds explore, create, and grow through digital learning.</p>
+        <h1 id="hero-title">افتح إمكانيات طفلك</h1>
+        <p id="hero-description">مرحبًا بكم في مدرسة مايا الرقمية للأطفال — حيث تستكشف العقول الشابة وتبدع وتنمو من خلال التعلم الرقمي.</p>
         <div class="hero_btn-continer">
-          <a href="" class="call_to-btn btn_white-border">Read More</a>
+          <a href="#" class="call_to-btn btn btn-outline-light" id="hero-button">اقرأ المزيد</a>
         </div>
       </div>
       <div class="hero_img-container">
-        <div>
-          <img src="images/hero.png" alt="" class="img-fluid">
-        </div>
+        <img src="images/hero.png" alt="" class="img-fluid">
       </div>
     </div>
   </section>
@@ -90,18 +80,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="about_img-container">
-            <img src="images/about.png" alt="">
-          </div>
+          <img src="images/about.png" alt="" class="img-fluid">
         </div>
         <div class="col-md-6">
-          <div class="about_detail-box">
-            <h3>About Maya Kids Digital School</h3>
-            <p>At Maya Kids Digital School, we inspire creativity, critical thinking, and collaboration. Our modern curriculum blends foundational academics with digital literacy to prepare kids for a dynamic future.</p>
-            <div class="">
-              <a href="" class="call_to-btn btn_white-border">Read More</a>
-            </div>
-          </div>
+          <h3 id="about-title">عن مدرسة مايا الرقمية للأطفال</h3>
+          <p id="about-description">في مدرسة مايا الرقمية للأطفال، نلهم الإبداع والتفكير النقدي والتعاون. تجمع منهجنا الحديث بين الأكاديميات الأساسية والمهارات الرقمية لإعداد الأطفال لمستقبل ديناميكي.</p>
+          <a href="#" class="call_to-btn btn btn-outline-light" id="about-button">اقرأ المزيد</a>
         </div>
       </div>
     </div>
@@ -111,18 +95,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="admission_detail-box">
-            <h3>Admissions Now Open</h3>
-            <p>Enroll your child for an engaging and interactive digital education experience. Discover programs designed for young learners with a passion for technology and creativity.</p>
-            <div class="">
-              <a href="" class="call_to-btn btn_white-border">Read More</a>
-            </div>
-          </div>
+          <h3 id="admission-title">التسجيل مفتوح الآن</h3>
+          <p id="admission-description">قم بتسجيل طفلك لتجربة تعليمية رقمية تفاعلية ومشوقة. اكتشف البرامج المصممة للمتعلمين الصغار الذين لديهم شغف بالتكنولوجيا والإبداع.</p>
+          <a href="#" class="call_to-btn btn btn-outline-light" id="admission-button">اقرأ المزيد</a>
         </div>
         <div class="col-md-6">
-          <div class="admission_img-container">
-            <img src="images/admission.png" alt="">
-          </div>
+          <img src="images/admission.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
@@ -132,18 +110,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="why_img-container">
-            <img src="images/why.png" alt="">
-          </div>
+          <img src="images/why.png" alt="" class="img-fluid">
         </div>
         <div class="col-md-6">
-          <div class="why_detail-box">
-            <h3>Why Choose Maya Kids Digital School?</h3>
-            <p>We offer an inclusive, fun, and future-focused learning environment that nurtures curiosity and encourages students to develop digital skills, creativity, and confidence.</p>
-            <div class="">
-              <a href="" class="call_to-btn btn_white-border">Read More</a>
-            </div>
-          </div>
+          <h3 id="why-title">لماذا تختار مدرسة مايا الرقمية للأطفال؟</h3>
+          <p id="why-description">نحن نقدم بيئة تعليمية شاملة وممتعة ومركزة على المستقبل، تعزز الفضول وتشجع الطلاب على تطوير المهارات الرقمية والإبداع والثقة.</p>
+          <a href="#" class="call_to-btn btn btn-outline-light" id="why-button">اقرأ المزيد</a>
         </div>
       </div>
     </div>
@@ -153,18 +125,12 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <div class="determine_detail-box">
-            <h3>Find the Right Program for Your Child</h3>
-            <p>Explore a variety of classes — from coding and game development to digital art and storytelling — tailored for children aged 5 to 14.</p>
-            <div class="">
-              <a href="" class="call_to-btn btn_white-border">Read More</a>
-            </div>
-          </div>
+          <h3 id="determine-title">ابحث عن البرنامج المناسب لطفلك</h3>
+          <p id="determine-description">استكشف مجموعة متنوعة من الفصول — من البرمجة وتطوير الألعاب إلى الفن الرقمي وسرد القصص — مصممة للأطفال من سن 5 إلى 14.</p>
+          <a href="#" class="call_to-btn btn btn-outline-light" id="determine-button">اقرأ المزيد</a>
         </div>
         <div class="col-md-6">
-          <div class="determine_img-container">
-            <img src="images/determine.png" alt="">
-          </div>
+          <img src="images/determine.png" alt="" class="img-fluid">
         </div>
       </div>
     </div>
@@ -172,7 +138,7 @@
 </div>
 
 <section class="client_section layout_padding">
-  <h2>Testimonials</h2>
+  <h2 id="testimonials-title">الشهادات</h2>
   <div class="container">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -184,15 +150,11 @@
         <div class="carousel-item active">
           <div class="row">
             <div class="col-md-3">
-              <div class="client_img-box">
-                <img src="images/client.png" alt="">
-              </div>
+              <img src="images/client.png" alt="" class="img-fluid">
             </div>
             <div class="col-md-9">
-              <div class="client_detail-box">
-                <h5>Sarah M.</h5>
-                <p>"My daughter loves Maya Kids Digital School! The coding and animation classes are her favorite — she’s learning so much while having fun."</p>
-              </div>
+              <h5 id="client-name">سارة م.</h5>
+              <p id="client-testimonial">"ابنتي تحب مدرسة مايا الرقمية للأطفال! دروس البرمجة والرسوم المتحركة هي المفضلة لديها — تتعلم الكثير أثناء الاستمتاع."</p>
             </div>
           </div>
         </div>
@@ -201,17 +163,93 @@
     </div>
   </div>
 </section>
+
 <!-- footer section -->
 <section class="container-fluid footer_section">
-  <p>
-    &copy; 2025 Maya Kids Digital School. All Rights Reserved.
-  </p>
+  <p id="footer-text">&copy; 2025 مدرسة مايا الرقمية للأطفال. جميع الحقوق محفوظة.</p>
 </section>
 <!-- end footer section -->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script>
+  let isArabic = true;
+
   function changeLanguage() {
-    // Implement language change logic here
-    alert('Language change feature is not yet implemented.');
+    if (isArabic) {
+      // Change to English
+      document.getElementById("page-title").innerText = "Maya Kids Digital School";
+      document.getElementById("brand-name").innerText = "Maya Kids Digital School";
+      document.getElementById("home-link").innerText = "Home";
+      document.getElementById("about-link").innerText = "About";
+      document.getElementById("admission-link").innerText = "Admission";
+      document.getElementById("why-link").innerText = "Why Us";
+      document.getElementById("contact-link").innerText = "Contact Us";
+      document.getElementById("programming-link").innerText = "Programming for Kids";
+
+      document.getElementById("hero-title").innerText = "Unlock Your Child's Potential";
+      document.getElementById("hero-description").innerText = "Welcome to Maya Kids Digital School — where young minds explore, create, and grow through digital learning.";
+      document.getElementById("hero-button").innerText = "Read More";
+
+      document.getElementById("about-title").innerText = "About Maya Kids Digital School";
+      document.getElementById("about-description").innerText = "At Maya Kids Digital School, we inspire creativity, critical thinking, and collaboration. Our modern curriculum blends foundational academics with digital literacy to prepare kids for a dynamic future.";
+      document.getElementById("about-button").innerText = "Read More";
+
+      document.getElementById("admission-title").innerText = "Admissions Now Open";
+      document.getElementById("admission-description").innerText = "Enroll your child for an engaging and interactive digital education experience. Discover programs designed for young learners with a passion for technology and creativity.";
+      document.getElementById("admission-button").innerText = "Read More";
+
+      document.getElementById("why-title").innerText = "Why Choose Maya Kids Digital School?";
+      document.getElementById("why-description").innerText = "We offer an inclusive, fun, and future-focused learning environment that nurtures curiosity and encourages students to develop digital skills, creativity, and confidence.";
+      document.getElementById("why-button").innerText = "Read More";
+
+      document.getElementById("determine-title").innerText = "Find the Right Program for Your Child";
+      document.getElementById("determine-description").innerText = "Explore a variety of classes — from coding and game development to digital art and storytelling — tailored for children aged 5 to 14.";
+      document.getElementById("determine-button").innerText = "Read More";
+
+      document.getElementById("testimonials-title").innerText = "Testimonials";
+      document.getElementById("client-name").innerText = "Sarah M.";
+      document.getElementById("client-testimonial").innerText = "\"My daughter loves Maya Kids Digital School! The coding and animation classes are her favorite — she’s learning so much while having fun.\"";
+      document.getElementById("footer-text").innerText = "&copy; 2025 Maya Kids Digital School. All Rights Reserved.";
+
+    } else {
+      // Change to Arabic
+      document.getElementById("page-title").innerText = "مدرسة مايا الرقمية للأطفال";
+      document.getElementById("brand-name").innerText = "مدرسة مايا الرقمية للأطفال";
+      document.getElementById("home-link").innerText = "الرئيسية";
+      document.getElementById("about-link").innerText = "من نحن";
+      document.getElementById("admission-link").innerText = "التسجيل";
+      document.getElementById("why-link").innerText = "لماذا نحن";
+      document.getElementById("contact-link").innerText = "اتصل بنا";
+      document.getElementById("programming-link").innerText = "برمجة للأطفال";
+
+      document.getElementById("hero-title").innerText = "افتح إمكانيات طفلك";
+      document.getElementById("hero-description").innerText = "مرحبًا بكم في مدرسة مايا الرقمية للأطفال — حيث تستكشف العقول الشابة وتبدع وتنمو من خلال التعلم الرقمي.";
+      document.getElementById("hero-button").innerText = "اقرأ المزيد";
+
+      document.getElementById("about-title").innerText = "عن مدرسة مايا الرقمية للأطفال";
+      document.getElementById("about-description").innerText = "في مدرسة مايا الرقمية للأطفال، نلهم الإبداع والتفكير النقدي والتعاون. تجمع منهجنا الحديث بين الأكاديميات الأساسية والمهارات الرقمية لإعداد الأطفال لمستقبل ديناميكي.";
+      document.getElementById("about-button").innerText = "اقرأ المزيد";
+
+      document.getElementById("admission-title").innerText = "التسجيل مفتوح الآن";
+      document.getElementById("admission-description").innerText = "قم بتسجيل طفلك لتجربة تعليمية رقمية تفاعلية ومشوقة. اكتشف البرامج المصممة للمتعلمين الصغار الذين لديهم شغف بالتكنولوجيا والإبداع.";
+      document.getElementById("admission-button").innerText = "اقرأ المزيد";
+
+      document.getElementById("why-title").innerText = "لماذا تختار مدرسة مايا الرقمية للأطفال؟";
+      document.getElementById("why-description").innerText = "نحن نقدم بيئة تعليمية شاملة وممتعة ومركزة على المستقبل، تعزز الفضول وتشجع الطلاب على تطوير المهارات الرقمية والإبداع والثقة.";
+      document.getElementById("why-button").innerText = "اقرأ المزيد";
+
+      document.getElementById("determine-title").innerText = "ابحث عن البرنامج المناسب لطفلك";
+      document.getElementById("determine-description").innerText = "استكشف مجموعة متنوعة من الفصول — من البرمجة وتطوير الألعاب إلى الفن الرقمي وسرد القصص — مصممة للأطفال من سن 5 إلى 14.";
+      document.getElementById("determine-button").innerText = "اقرأ المزيد";
+
+      document.getElementById("testimonials-title").innerText = "الشهادات";
+      document.getElementById("client-name").innerText = "سارة م.";
+      document.getElementById("client-testimonial").innerText = "\"ابنتي تحب مدرسة مايا الرقمية للأطفال! دروس البرمجة والرسوم المتحركة هي المفضلة لديها — تتعلم الكثير أثناء الاستمتاع.\"";
+      document.getElementById("footer-text").innerText = "&copy; 2025 مدرسة مايا الرقمية للأطفال. جميع الحقوق محفوظة.";
+    }
+    isArabic = !isArabic;
   }
 </script>
 

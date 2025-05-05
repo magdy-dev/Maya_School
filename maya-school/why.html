@@ -12,7 +12,7 @@
   <meta name="description" content="Maya Kids Digital School is a joyful space where children learn coding, games, and digital skills in fun, engaging ways." />
   <meta name="author" content="Maya Kids Digital School" />
 
-  <title>Maya Kids Digital School</title>
+  <title id="page-title">Maya Kids Digital School</title>
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
@@ -35,7 +35,7 @@
     <div class="container">
       <nav class="navbar navbar-expand-lg custom_nav-container">
         <a class="navbar-brand" href="index.html">
-          <span>Maya Kids Digital School</span>
+          <span id="navbar-title">Maya Kids Digital School</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,6 +61,9 @@
                 <a class="nav-link" href="contact.html"> Contact Us </a>
               </li>
             </ul>
+            <button class="btn btn-link language-icon ml-3" onclick="changeLanguage()" title="Switch Language">
+              <i class="fa fa-globe"></i>
+            </button>
           </div>
         </div>
       </nav>
@@ -81,8 +84,8 @@
         </div>
         <div class="col-md-6">
           <div class="why_detail-box">
-            <h3>Why Learn at Maya Kids Digital School</h3>
-            <p>
+            <h3 id="why-title">Why Learn at Maya Kids Digital School</h3>
+            <p id="why-description">
               Maya Kids Digital School is a creative and joyful space where young learners explore technology, coding, and digital skills in fun, engaging ways. Our programs are designed to spark curiosity and build confidence in children, introducing them to the world of computers, games, and digital creativity.
               With passionate teachers and hands-on activities, we turn learning into an adventure your child will love. Plus, we’ll teach your child both <strong>programming</strong> and <strong>English</strong> at the same time — helping them build essential skills for the future while having fun!
             </p>
@@ -100,27 +103,27 @@
 <!-- Info section -->
 <section class="info_section layout_padding-top">
   <div class="info_logo-box">
-    <h2>Maya Kids Digital School</h2>
+    <h2 id="info-title">Maya Kids Digital School</h2>
   </div>
   <div class="container layout_padding2">
     <div class="row">
       <div class="col-md-3">
-        <h5>About Us</h5>
-        <p>
+        <h5 id="about-title">About Us</h5>
+        <p id="about-description">
           Maya Kids Digital School is dedicated to making coding and technology accessible and enjoyable for children. Through interactive programs and fun projects, we nurture future digital creators.
         </p>
       </div>
       <div class="col-md-3">
-        <h5>Quick Links</h5>
+        <h5 id="quick-links-title">Quick Links</h5>
         <ul>
-          <li><a href="#">Coding for Kids</a></li>
-          <li><a href="#">Game Design Classes</a></li>
-          <li><a href="#">Digital Creativity Workshops</a></li>
+          <li><a href="#" id="link1">Coding for Kids</a></li>
+          <li><a href="#" id="link2">Game Design Classes</a></li>
+          <li><a href="#" id="link3">Digital Creativity Workshops</a></li>
         </ul>
       </div>
       <div class="col-md-3">
-        <h5>Contact Us</h5>
-        <p>
+        <h5 id="contact-title">Contact Us</h5>
+        <p id="contact-info">
           Email: markobosh5@gmail.com<br>
           Phone: +375 44 587 6356
         </p>
@@ -141,10 +144,9 @@
   <div class="container">
     <div class="social_container">
       <div class="social-box">
-        <a href="#"><img src="images/fb.png" alt="Facebook"></a>
-        <a href="#"><img src="images/twitter.png" alt="Twitter"></a>
-        <a href="#"><img src="images/linkedin.png" alt="LinkedIn"></a>
-        <a href="#"><img src="images/instagram.png" alt="Instagram"></a>
+        <a href="https://www.facebook.com/share/g/1E8xH7ao3K/?mibextid=wwXIfr"><img src="images/fb.png" alt="Facebook"></a>
+        <a href="https://wa.me/375445876356"><img src="images/whatsapp.png" alt="whatsapp"></a>
+        <a href="https://t.me/MagMark11"><img src="images/telgram.png" alt="Telgram"></a>
       </div>
     </div>
   </div>
@@ -153,7 +155,7 @@
 
 <!-- Footer section -->
 <section class="container-fluid footer_section">
-  <p>
+  <p id="footer-text">
     Copyright &copy; 2025 Maya Kids Digital School.
     Designed by
   </p>
@@ -162,6 +164,47 @@
 
 <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.js"></script>
+
+<script>
+  let isArabic = false;
+
+  function changeLanguage() {
+    if (isArabic) {
+      // Change to English
+      document.getElementById("page-title").innerText = "Maya Kids Digital School";
+      document.getElementById("navbar-title").innerText = "Maya Kids Digital School";
+      document.getElementById("why-title").innerText = "Why Learn at Maya Kids Digital School";
+      document.getElementById("why-description").innerText = "Maya Kids Digital School is a creative and joyful space where young learners explore technology, coding, and digital skills in fun, engaging ways. Our programs are designed to spark curiosity and build confidence in children, introducing them to the world of computers, games, and digital creativity. With passionate teachers and hands-on activities, we turn learning into an adventure your child will love. Plus, we’ll teach your child both programming and English at the same time — helping them build essential skills for the future while having fun!";
+      document.getElementById("info-title").innerText = "Maya Kids Digital School";
+      document.getElementById("about-title").innerText = "About Us";
+      document.getElementById("about-description").innerText = "Maya Kids Digital School is dedicated to making coding and technology accessible and enjoyable for children. Through interactive programs and fun projects, we nurture future digital creators.";
+      document.getElementById("quick-links-title").innerText = "Quick Links";
+      document.getElementById("link1").innerText = "Coding for Kids";
+      document.getElementById("link2").innerText = "Game Design Classes";
+      document.getElementById("link3").innerText = "Digital Creativity Workshops";
+      document.getElementById("contact-title").innerText = "Contact Us";
+      document.getElementById("contact-info").innerText = "Email: markobosh5@gmail.com\nPhone: +375 44 587 6356";
+      document.getElementById("footer-text").innerText = "Copyright © 2025 Maya Kids Digital School. Designed by";
+    } else {
+      // Change to Arabic
+      document.getElementById("page-title").innerText = "مدرسة مايا الرقمية للأطفال";
+      document.getElementById("navbar-title").innerText = "مدرسة مايا الرقمية للأطفال";
+      document.getElementById("why-title").innerText = "لماذا تتعلم في مدرسة مايا الرقمية للأطفال";
+      document.getElementById("why-description").innerText = "مدرسة مايا الرقمية للأطفال هي مساحة إبداعية ومبهجة حيث يستكشف المتعلمون الصغار التكنولوجيا والبرمجة والمهارات الرقمية بطرق ممتعة وجذابة. تم تصميم برامجنا لإشعال الفضول وبناء الثقة لدى الأطفال، مما يقدم لهم عالم الكمبيوتر والألعاب والإبداع الرقمي. مع معلمين متحمسين وأنشطة عملية، نجعل التعلم مغامرة سيحبها طفلك. بالإضافة إلى ذلك، سنعلم طفلك البرمجة والإنجليزية في نفس الوقت — مما يساعدهم على بناء المهارات الأساسية للمستقبل أثناء الاستمتاع!";
+      document.getElementById("info-title").innerText = "مدرسة مايا الرقمية للأطفال";
+      document.getElementById("about-title").innerText = "من نحن";
+      document.getElementById("about-description").innerText = "مدرسة مايا الرقمية للأطفال مكرسة لجعل البرمجة والتكنولوجيا متاحة وممتعة للأطفال. من خلال البرامج التفاعلية والمشاريع الممتعة، نرعى المبدعين الرقميين في المستقبل.";
+      document.getElementById("quick-links-title").innerText = "روابط سريعة";
+      document.getElementById("link1").innerText = "البرمجة للأطفال";
+      document.getElementById("link2").innerText = "دروس تصميم الألعاب";
+      document.getElementById("link3").innerText = "ورش العمل الإبداعية الرقمية";
+      document.getElementById("contact-title").innerText = "اتصل بنا";
+      document.getElementById("contact-info").innerText = "البريد الإلكتروني: markobosh5@gmail.com\nالهاتف: +375 44 587 6356";
+      document.getElementById("footer-text").innerText = "حقوق الطبع والنشر © 2025 مدرسة مايا الرقمية للأطفال. مصمم بواسطة";
+    }
+    isArabic = !isArabic;
+  }
+</script>
 </body>
 
 </html>
